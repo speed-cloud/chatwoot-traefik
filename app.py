@@ -11,7 +11,7 @@ try:
     user = os.getenv('POSTGRES_USERNAME', ''),
     password = os.getenv('POSTGRES_PASSWORD', ''),
     host = os.getenv('POSTGRES_HOST', ''),
-    database = os.getenv('POSTGRES_DATABASE', f'chatwoot_{os.getenv('RAILS_ENV', 'production')}'),
+    database = os.getenv('POSTGRES_DATABASE', f'chatwoot_{os.getenv("RAILS_ENV", "production")}'),
   )
 except:
   traceback.print_exc()
